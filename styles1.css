@@ -1,0 +1,133 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed; /* Keep background fixed when scrolling */
+    background-size: cover; /* Cover the entire viewport */
+}
+
+.header {
+    background-color: #f8f9fa;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+.header-logo {
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.logo-img {
+    width: 30px;
+    height: auto;
+}
+
+.header-link {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-link:hover {
+    background-color: #ddd;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 60px;
+}
+
+.floating-title {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* unvisited link */
+a:link {
+  color: #592931; /* Dark blue */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+/* visited link */
+a:visited {
+  color: #592931; /* Purple */
+}
+
+/* mouse over link */
+a:hover {
+  color: #592931; /* Coral */
+  text-decoration: underline; 
+}
+
+/* selected link */
+a:active {
+  color: #592931; /* Navy blue */
+}
+
+
+table {
+    width: 90%; /* Adjusted the width */
+    border-collapse: separate;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Added margin at the bottom for spacing */
+}
+
+th, td {
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: left; /* Adjusted text alignment */
+}
+
+th {
+    background-color: #55608f;
+}
+
+thead th {
+    background-color: #55608f;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
